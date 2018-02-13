@@ -1,0 +1,2 @@
+android.app.Application
+TD1_Xamarin.Android

@@ -1,0 +1,1 @@
+c:\users\dupuyr\documents\visual studio 2017\Projects\TD1-Xamarin\TD1-Xamarin\TD1_Xamarin.UWP\TD1_Xamarin.UWP.csproj;x86

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TD1_Xamarin.Views"
+             x:Class="TD1_Xamarin.Views.MainPage">
+
+    <StackLayout VerticalOptions="Center">
+        <Label>Montant en euros</Label>
+        <Editor x:Name="MontantEuros" Text="{Binding MontantEuros, Mode=TwoWay}"></Editor>
+        <Label>Devise</Label>
+        <ListView SelectedItem="{Binding SelectedDevise, Mode=TwoWay}" x:Name="ListeDevises" ItemsSource="{Binding ListeDevises, Mode=TwoWay}"
+                SeparatorVisibility="None">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nom}" />
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button x:Name="convertir" Text="Convertir" Command="{Binding BtnSetConversion}"
+            IsEnabled="True"/>
+        <Label>Montant en devises</Label>
+        <Editor x:Name="MontantDevises" Text="{Binding MontantDevises, Mode=TwoWay}"></Editor>
+    </StackLayout>
+
+</ContentPage>
